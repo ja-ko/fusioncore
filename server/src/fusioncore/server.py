@@ -7,6 +7,7 @@ import configparser
 import os
 import time
 import signal
+from threading import Thread
 
 from fusioncore import __version__
 from fusioncore import I2C
@@ -18,6 +19,22 @@ __license__ = "mit"
 
 _logger = logging.getLogger(__name__)
 
+main_esp: I2C.Device = None
+making_tschunk = False
+
+
+def tschunk_make():
+    global main_esp, making_tschunk
+    if making_tschunk:
+        return
+    try:
+        making_tschunk = True  # There won't be a race condition! I AM SURE!
+        main_esp.test()
+        time.sleep(2.75)
+        main_esp.test2()
+    finally:
+        making_tschunk = False
+
 
 def read_config():
     config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'default.ini')
@@ -25,16 +42,35 @@ def read_config():
     config.read(config_path)
 
 
+def create_main_esp(bus):
+    result = I2C.Device("main_esp", 0x23, bus)
+    result.register_instrument(I2C.Instrument("sinus", 0x0))
+    result.register_operation(I2C.Operation("test", 0x2))
+    result.register_operation(I2C.Operation("test2", 0x3))
+    return result
+
+
+def update_device_instruments(devices):
+    for device in devices:
+        device.refresh_instruments()
+    time.sleep(0.05)
+    for device in devices:
+        device.read_instrument_value_buffer()
+    time.sleep(0.05)
+
+
 def main_loop():
     with I2C.get_bus(1) as bus:
-        temperature_refrigerator_cold = I2C.Device("temperature_refrigerator_cold", 0x10, 0x1, bus)
-        temperature_refrigerator_warm = I2C.Device("temperature_refrigerator_warm", 0x20, 0x1, bus)
-        flow_refrigerator = I2C.Device("flow_refrigerator", 0x30, 0x1, bus)
+        global main_esp
+        main_esp = create_main_esp(bus)
 
         while True:
-            database.measure_and_store(temperature_refrigerator_cold, temperature_refrigerator_warm, flow_refrigerator)
-            time.sleep(1)
+            frame_started = time.time()
+            update_device_instruments([main_esp])
+            database.measure_and_store(main_esp)
 
+            logging.debug("frame took %f seconds", (time.time() - frame_started))
+            time.sleep(1.0 - (time.time() - frame_started))
 
 
 def parse_args(args):
@@ -85,8 +121,8 @@ def setup_logging(loglevel):
                         format=logformat, datefmt="%Y-%m-%d %H:%M:%S")
 
 
-def sigint_handler():
-    database.list_measurements()
+def sigint_handler(sig, frame):
+    #database.list_measurements()
     sys.exit()
 
 
@@ -97,15 +133,13 @@ def main(args):
       args ([str]): command line parameter list
     """
 
-    signal.signal(signal.SIGINT, sigint_handler())
+    signal.signal(signal.SIGINT, sigint_handler)
 
     read_config()
 
-    args = parse_args(args)
-    setup_logging(args.loglevel)
-    _logger.debug("Starting crazy calculations...")
-    print("The {}-th Fibonacci number is {}".format(args.n, fib(args.n)))
-    _logger.info("Script ends here")
+    # args = parse_args(args)
+    setup_logging(logging.DEBUG)
+    main_loop()
 
 
 def run():

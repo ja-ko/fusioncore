@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from fusioncore.skeleton import fib
+from fusioncore import fib
 
 __author__ = "Jannik Kolodziej"
 __copyright__ = "Jannik Kolodziej"
