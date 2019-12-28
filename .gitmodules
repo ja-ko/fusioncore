@@ -1,0 +1,6 @@
+[submodule "slave/components/esp32-ds18b20"]
+	path = slave/components/esp32-ds18b20
+	url = https://github.com/DavidAntliff/esp32-ds18b20
+[submodule "slave/components/esp32-owb"]
+	path = slave/components/esp32-owb
+	url = https://github.com/DavidAntliff/esp32-owb

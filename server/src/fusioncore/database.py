@@ -26,7 +26,12 @@ def measure_and_store(*devices: I2C.Device):
     for device in devices:
         for key in device.instruments:
             instrument = device.instruments[key]
-            Measurement(name=instrument.name, device=device.name, value=(instrument.value))
+            Measurement(name=instrument.name, device=device.name, value=instrument.value)
+
+
+@db_session
+def store(name: str, device: str, value: float):
+    Measurement(name=name, device=device, value=value)
 
 
 @db_session

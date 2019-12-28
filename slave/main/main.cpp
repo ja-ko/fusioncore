@@ -12,12 +12,13 @@
 #include <map>
 #include <soc/i2c_struct.h>
 #include "math.h"
+#include "devices.h"
 
 
 static const char *TAG = "fusiocore-slave";
 
-#define I2C_SDA GPIO_NUM_21
-#define I2C_SCL GPIO_NUM_22
+#define I2C_SDA GPIO_NUM_32 //red
+#define I2C_SCL GPIO_NUM_33
 #define I2C_ADDR 0x23
 
 #define I2C_RX_BUF_LEN 512
@@ -25,6 +26,10 @@ static const char *TAG = "fusiocore-slave";
 #define DATA_BUFFER_LEN 1024
 
 #define I2C_PORT I2C_NUM_0
+
+#define TRIGGER_PIN GPIO_NUM_17
+
+static float trigger_timestamp = 0.0f;
 
 typedef float (*measurement_t)();
 std::vector<measurement_t> measurement_funcs;
@@ -105,6 +110,8 @@ void i2c_read_loop(void* arg) {
  * Update a cache with the newest measurements from measurement_funcs
  */
 void measure_loop(void* arg) {
+    setup_outgoing_gpios();
+    setup_temp_sensor();
     while(1) {
         vTaskDelay(1000 / portTICK_RATE_MS);
     }
@@ -114,25 +121,25 @@ void measure_loop(void* arg) {
  * These commands should return immediately. You can time consuming tasks in measure_loop() and store the results in a
  * cache. Return just the cached value from here.
  */
-float measure_temp_1() {
+float sinus() {
     auto cur_time = (float) (esp_timer_get_time() / 10000000.0f);
     return sin(cur_time);
 }
 
-float measure_temp_2() {
-    return 83.0f;
+float last_buzzer() {
+    return trigger_timestamp;
 }
 
-float measure_temp_3() {
-    return -3.0f;
+float flow_warm() {
+    return 5.0f;
 }
 
-void open_valve() {
-    ESP_LOGI(TAG, "valve opened");
+float flow_cold() {
+    return 5.0f;
 }
 
-void close_valve() {
-    ESP_LOGI(TAG, "valve closed");
+float temp_mate() {
+    return 17.0f;
 }
 
 void write_tx_buffer() {
@@ -152,18 +159,55 @@ void register_command(uint8_t opcode, command_t command) {
     command_funcs.insert(std::pair<uint8_t, command_t>(opcode, command));
 }
 
+void trigger_pressed(void* arg) {
+    trigger_timestamp = (float)esp_timer_get_time();
+    //ESP_LOGI(TAG, "CRASH!!");
+}
+
+void setup_gpio() {
+    gpio_install_isr_service(0);
+    gpio_set_direction(TRIGGER_PIN, GPIO_MODE_INPUT);
+    gpio_pulldown_en(TRIGGER_PIN);
+    gpio_pullup_dis(TRIGGER_PIN);
+    gpio_isr_handler_add(TRIGGER_PIN, trigger_pressed, nullptr);
+    gpio_set_intr_type(TRIGGER_PIN, GPIO_INTR_POSEDGE);
+    gpio_intr_enable(TRIGGER_PIN);
+}
+
+void reset() {
+    ESP_LOGW(TAG, "Restarting ESP cause of reset()");
+    esp_restart();
+}
+
 
 void app_main() {
     ESP_LOGI(TAG, "Nabend!");
 
+    setup_gpio();
 
-    measurement_funcs.push_back(measure_temp_1);
-    measurement_funcs.push_back(measure_temp_2);
-    measurement_funcs.push_back(measure_temp_3);
+
+    measurement_funcs.push_back(sinus);
+    measurement_funcs.push_back(last_buzzer);
+    measurement_funcs.push_back(flow_warm);
+    measurement_funcs.push_back(flow_cold);
+    measurement_funcs.push_back(temp_mate);
 
     register_command(0x1, write_tx_buffer);
-    register_command(0x2, open_valve);
-    register_command(0x3, close_valve);
+    register_command(0x2, air_enable);
+    register_command(0x3, air_disable);
+    register_command(0x4, valve_alc_open);
+    register_command(0x5, valve_alc_close);
+    register_command(0x6, valve_lemon_open);
+    register_command(0x7, valve_lemon_close);
+    register_command(0x8, valve_air_open);
+    register_command(0x9, valve_air_close);
+    register_command(0xa, pump_warm_enable);
+    register_command(0xb, pump_warm_disable);
+    register_command(0xc, compressor_enable);
+    register_command(0xd, compressor_disable);
+
+
+    register_command(0xff, reset);
 
     ESP_ERROR_CHECK(i2c_slave_init());
 
