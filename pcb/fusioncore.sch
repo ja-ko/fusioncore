@@ -1819,9 +1819,9 @@ L Transistor_BJT:S8550 Q16
 U 1 1 5E2CB094
 P 4900 9150
 F 0 "Q16" H 5091 9104 50  0000 L CNN
-F 1 "S8550" H 5091 9195 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 9075 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8550.pdf" H 4900 9150 50  0001 L CNN
+F 1 "MMBT4403" H 5091 9195 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 9075 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Guangdong-Hottech-MMBT4403_C181124.pdf" H 4900 9150 50  0001 L CNN
 	1    4900 9150
 	-1   0    0    1   
 $EndComp

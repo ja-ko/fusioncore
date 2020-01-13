@@ -1515,10 +1515,10 @@ Wire Wire Line
 Wire Wire Line
 	3100 3050 4300 3050
 Wire Wire Line
-	3100 2950 4300 2950
+	700  2350 1900 2350
 Text Label 700  2150 0    50   ~ 0
 Valve_AL
-Text Label 4300 2950 2    50   ~ 0
+Text Label 700  2350 0    50   ~ 0
 Valve_AR
 Text Label 700  2250 0    50   ~ 0
 Valve_AO
@@ -1575,7 +1575,6 @@ F 3 "~" H 12650 1900 50  0001 C CNN
 	1    12650 1900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1900 2350
 NoConn ~ 3100 2450
 NoConn ~ 3100 2350
 NoConn ~ 3100 1550
