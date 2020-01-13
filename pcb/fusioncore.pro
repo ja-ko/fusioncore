@@ -1,4 +1,4 @@
-update=11.01.2020 19:46:00
+update=13.01.2020 02:29:21
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=fusioncore.net
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -82,11 +82,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -247,39 +247,6 @@ Name=Default
 Clearance=0.2
 TrackWidth=0.15
 ViaDiameter=0.5
-ViaDrill=0.2
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/1]
-Name=12V_LC
-Clearance=0.5
-TrackWidth=0.8
-ViaDiameter=0.5
-ViaDrill=0.2
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/2]
-Name=High Current
-Clearance=0.2
-TrackWidth=8
-ViaDiameter=8
-ViaDrill=0.2
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/3]
-Name=Meduim Current
-Clearance=0.2
-TrackWidth=2
-ViaDiameter=2
 ViaDrill=0.2
 uViaDiameter=0.3
 uViaDrill=0.1

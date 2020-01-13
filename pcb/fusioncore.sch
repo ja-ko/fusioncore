@@ -1491,19 +1491,13 @@ Wire Wire Line
 Wire Wire Line
 	1900 2850 700  2850
 Wire Wire Line
-	1900 2950 700  2950
-Wire Wire Line
 	1900 3050 700  3050
-Text Label 700  2150 0    50   ~ 0
-Pump_WC
-Text Label 700  2250 0    50   ~ 0
-Pump_WW
-Text Label 700  2850 0    50   ~ 0
-Pump_A
-Text Label 700  2950 0    50   ~ 0
-Pump_M1
 Text Label 700  3050 0    50   ~ 0
-Pump_M2
+Pump_WC
+Text Label 4300 3050 2    50   ~ 0
+Pump_WW
+Text Label 4300 3150 2    50   ~ 0
+Pump_A
 Wire Wire Line
 	3100 2250 4300 2250
 Text Label 4300 2250 2    50   ~ 0
@@ -1512,25 +1506,25 @@ Wire Wire Line
 	3100 1950 4300 1950
 Wire Wire Line
 	3100 2050 4300 2050
-Text Label 4300 1950 2    50   ~ 0
-Flow_C
 Text Label 4300 2050 2    50   ~ 0
+Flow_C
+Text Label 4300 1950 2    50   ~ 0
 Flow_W
 Wire Wire Line
 	3100 3150 4300 3150
 Wire Wire Line
 	3100 3050 4300 3050
 Wire Wire Line
-	3100 2950 4300 2950
-Text Label 4300 2950 2    50   ~ 0
+	700  2350 1900 2350
+Text Label 700  2150 0    50   ~ 0
 Valve_AL
-Text Label 4300 3050 2    50   ~ 0
+Text Label 700  2350 0    50   ~ 0
 Valve_AR
-Text Label 4300 3150 2    50   ~ 0
+Text Label 700  2250 0    50   ~ 0
 Valve_AO
 Wire Wire Line
-	3100 2750 4300 2750
-Text Label 4300 2750 2    50   ~ 0
+	3100 1650 4300 1650
+Text Label 700  1950 0    50   ~ 0
 Valve_M1
 Wire Wire Line
 	1900 1750 700  1750
@@ -1538,11 +1532,11 @@ Wire Wire Line
 	1900 1850 700  1850
 Wire Wire Line
 	1900 1950 700  1950
-Text Label 700  1750 0    50   ~ 0
-Valve_M2
 Text Label 700  1850 0    50   ~ 0
+Valve_M2
+Text Label 700  1750 0    50   ~ 0
 Valve_M3
-Text Label 700  1950 0    50   ~ 0
+Text Label 4300 1650 2    50   ~ 0
 Valve_M4
 Wire Wire Line
 	12950 1600 14000 1600
@@ -1581,10 +1575,8 @@ F 3 "~" H 12650 1900 50  0001 C CNN
 	1    12650 1900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1900 2350
 NoConn ~ 3100 2450
 NoConn ~ 3100 2350
-NoConn ~ 3100 1650
 NoConn ~ 3100 1550
 Wire Wire Line
 	1900 2050 700  2050
@@ -2788,4 +2780,11 @@ Text Label 4100 10450 0    50   ~ 0
 INA_R-
 Text Label 4100 10750 0    50   ~ 0
 INAR+
+Text Label 700  2850 0    50   ~ 0
+Pump_M2
+Text Label 700  2950 0    50   ~ 0
+Pump_M1
+Wire Wire Line
+	1900 2950 700  2950
+NoConn ~ 3100 2750
 $EndSCHEMATC
