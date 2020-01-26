@@ -1791,6 +1791,7 @@ F 0 "U1" H 5900 9975 50  0000 C CNN
 F 1 "HX711" H 5900 9884 50  0000 C CNN
 F 2 "Package_SO:SOP-16_4.55x10.3mm_P1.27mm" H 5900 9850 50  0001 C CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf" H 5900 9850 50  0001 C CNN
+F 4 "C43656" H 5900 9400 50  0001 C CNN "LCSC"
 	1    5900 9400
 	1    0    0    -1  
 $EndComp
@@ -2234,6 +2235,7 @@ F 0 "U3" H 7100 4611 50  0000 C CNN
 F 1 "LTC2990" H 7100 4520 50  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7100 5300 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2990.pdf" H 6500 5800 50  0001 C CNN
+F 4 "C107804" H 7100 5300 50  0001 C CNN "LCSC"
 	1    7100 5300
 	1    0    0    -1  
 $EndComp
@@ -2634,6 +2636,7 @@ F 0 "U4" H 9500 4611 50  0000 C CNN
 F 1 "LTC2990" H 9500 4520 50  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 9500 5300 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2990.pdf" H 8900 5800 50  0001 C CNN
+F 4 "C107804" H 9500 5300 50  0001 C CNN "LCSC"
 	1    9500 5300
 	1    0    0    -1  
 $EndComp

@@ -2858,4 +2858,5 @@ Pump_M1
 Wire Wire Line
 	1900 2950 700  2950
 NoConn ~ 3100 2750
+NoConn ~ 3100 2950
 $EndSCHEMATC
