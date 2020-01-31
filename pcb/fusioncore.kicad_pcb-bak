@@ -5456,7 +5456,7 @@
   (gr_text + (at 122.3264 126.7968) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "Fusioncore Main - Mk 1\nhttps://tschunk.bot/" (at 140.5636 76.8096 90) (layer F.SilkS)
+  (gr_text "Fusioncore Main Mk. 1\nhttps://tschunk.bot/" (at 140.5636 76.8096 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_line (start 85.09 60.96) (end 93.98 69.85) (layer B.SilkS) (width 0.15))
