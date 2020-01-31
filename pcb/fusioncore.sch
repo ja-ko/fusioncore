@@ -292,17 +292,6 @@ F 3 "" H 950 4900 50  0000 C CNN
 	1    950  4900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R11
-U 1 1 58E22900
-P 1200 4850
-F 0 "R11" V 1280 4850 50  0000 C CNN
-F 1 "DNP" V 1200 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1130 4850 50  0001 C CNN
-F 3 "" H 1200 4850 50  0001 C CNN
-	1    1200 4850
-	0    1    1    0   
-$EndComp
 Text Notes 1900 3550 0    118  ~ 24
 HAT EEPROM
 Text Notes 850  9500 0    118  ~ 24
@@ -533,7 +522,7 @@ L Connector:Screw_Terminal_01x03 J2
 U 1 1 5E1CBB14
 P 15350 3800
 F 0 "J2" H 15430 3842 50  0000 L CNN
-F 1 "Temp_1" H 15430 3751 50  0000 L CNN
+F 1 "Temperature" H 15430 3751 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 15350 3800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15350 3800 50  0001 C CNN
 	1    15350 3800
@@ -574,7 +563,7 @@ L Connector:Screw_Terminal_01x02 J6
 U 1 1 5E1EE561
 P 15150 5450
 F 0 "J6" H 15230 5442 50  0000 L CNN
-F 1 "Pump_Water_Cold" H 15230 5351 50  0000 L CNN
+F 1 "Pump_Cold" H 15230 5351 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 5450 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 5450 50  0001 C CNN
 	1    15150 5450
@@ -585,7 +574,7 @@ L Connector:Screw_Terminal_01x02 J7
 U 1 1 5E2262F5
 P 15150 5750
 F 0 "J7" H 15230 5742 50  0000 L CNN
-F 1 "Pump_Water_Warm" H 15230 5651 50  0000 L CNN
+F 1 "Pump_Warm" H 15230 5651 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 5750 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 5750 50  0001 C CNN
 	1    15150 5750
@@ -1302,7 +1291,7 @@ L Device:LED D13
 U 1 1 5F8F0BD0
 P 12050 2050
 F 0 "D13" H 12043 2266 50  0000 C CNN
-F 1 "POWER GOOD" H 12043 2175 50  0000 C CNN
+F 1 "PWG" H 12043 2175 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12050 2050 50  0001 C CNN
 F 3 "~" H 12050 2050 50  0001 C CNN
 F 4 "C72043" H 12050 2050 50  0001 C CNN "LCSC"
@@ -1326,7 +1315,7 @@ L Device:LED D14
 U 1 1 5F8F1E60
 P 12050 2250
 F 0 "D14" H 12050 2050 50  0000 C CNN
-F 1 "STANDBY" H 12050 2150 50  0000 C CNN
+F 1 "STB" H 12050 2150 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12050 2250 50  0001 C CNN
 F 3 "~" H 12050 2250 50  0001 C CNN
 F 4 "C2296" H 12050 2250 50  0001 C CNN "LCSC"
@@ -1848,7 +1837,7 @@ U 1 1 5F09E027
 P 4550 5250
 F 0 "R16" H 4600 5300 50  0000 L CNN
 F 1 "0.15" V 4550 5150 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4480 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 5250 50  0001 C CNN
 F 3 "~" H 4550 5250 50  0001 C CNN
 F 4 "C247454" H 4550 5250 50  0001 C CNN "LCSC"
 	1    4550 5250
@@ -2233,17 +2222,6 @@ Text Label 700  2650 0    50   ~ 0
 Weight_CLK
 Text Label 700  2750 0    50   ~ 0
 Weight_D
-$Comp
-L Device:R R33
-U 1 1 5E1B5535
-P 6150 1350
-F 0 "R33" V 6050 1350 50  0000 C CNN
-F 1 "DNP" V 6150 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 1350 50  0001 C CNN
-F 3 "~" H 6150 1350 50  0001 C CNN
-	1    6150 1350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6000 1350 5750 1350
 Wire Wire Line
@@ -2258,7 +2236,7 @@ U 1 1 5E238E97
 P 3650 6650
 F 0 "TP2" V 3604 6838 50  0000 L CNN
 F 1 "3V3_PI" V 3695 6838 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 3850 6650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6650 50  0001 C CNN
 F 3 "~" H 3850 6650 50  0001 C CNN
 	1    3650 6650
 	0    1    1    0   
@@ -2269,7 +2247,7 @@ U 1 1 5E238B2E
 P 3650 6850
 F 0 "TP3" V 3604 7038 50  0000 L CNN
 F 1 "3V3" V 3695 7038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 3850 6850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6850 50  0001 C CNN
 F 3 "~" H 3850 6850 50  0001 C CNN
 	1    3650 6850
 	0    1    1    0   
@@ -2280,7 +2258,7 @@ U 1 1 5E2387C0
 P 3650 7050
 F 0 "TP4" V 3604 7238 50  0000 L CNN
 F 1 "5V" V 3695 7238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 3850 7050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 7050 50  0001 C CNN
 F 3 "~" H 3850 7050 50  0001 C CNN
 	1    3650 7050
 	0    1    1    0   
@@ -2291,7 +2269,7 @@ U 1 1 5E236258
 P 3650 7250
 F 0 "TP5" V 3604 7438 50  0000 L CNN
 F 1 "12V" V 3695 7438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 3850 7250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 7250 50  0001 C CNN
 F 3 "~" H 3850 7250 50  0001 C CNN
 	1    3650 7250
 	0    1    1    0   
@@ -2302,7 +2280,7 @@ U 1 1 5E427CC4
 P 3650 6450
 F 0 "TP1" V 3604 6638 50  0000 L CNN
 F 1 "GND" V 3695 6638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 3850 6450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6450 50  0001 C CNN
 F 3 "~" H 3850 6450 50  0001 C CNN
 	1    3650 6450
 	0    1    1    0   
@@ -2379,16 +2357,16 @@ Text Label 1300 5900 3    50   ~ 0
 Text Label 1500 5900 3    50   ~ 0
 5V
 Wire Wire Line
-	1000 6650 550  6650
-Text Label 550  6650 0    50   ~ 0
+	1000 7350 550  7350
+Text Label 550  7350 0    50   ~ 0
 LED_PWM
 Wire Wire Line
-	1000 6750 550  6750
+	1000 7150 550  7150
 Wire Wire Line
-	1000 6850 550  6850
-Text Label 550  6750 0    50   ~ 0
+	1000 7250 550  7250
+Text Label 550  7150 0    50   ~ 0
 Flow_W
-Text Label 550  6850 0    50   ~ 0
+Text Label 550  7250 0    50   ~ 0
 Flow_C
 Wire Wire Line
 	12900 8650 12300 8650
@@ -2397,16 +2375,16 @@ Wire Wire Line
 Text Label 12300 8750 0    50   ~ 0
 LED_PWM_5V
 Wire Wire Line
-	1800 6650 2350 6650
-Text Label 2350 6650 2    50   ~ 0
+	1800 7350 2350 7350
+Text Label 2350 7350 2    50   ~ 0
 LED_PWM_5V
 Wire Wire Line
-	1800 6750 2350 6750
+	1800 7150 2350 7150
 Wire Wire Line
-	1800 6850 2350 6850
-Text Label 2350 6750 2    50   ~ 0
+	1800 7250 2350 7250
+Text Label 2350 7150 2    50   ~ 0
 Flow_W_5V
-Text Label 2350 6850 2    50   ~ 0
+Text Label 2350 7250 2    50   ~ 0
 Flow_C_5V
 Text Label 11500 3650 0    50   ~ 0
 Flow_W_5V
@@ -2524,10 +2502,10 @@ Wire Wire Line
 Wire Wire Line
 	14250 3900 15150 3900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR015
 U 1 1 5E3E34F6
 P 10450 8650
-F 0 "#PWR?" H 10450 8400 50  0001 C CNN
+F 0 "#PWR015" H 10450 8400 50  0001 C CNN
 F 1 "GND" H 10455 8477 50  0000 C CNN
 F 2 "" H 10450 8650 50  0001 C CNN
 F 3 "" H 10450 8650 50  0001 C CNN
@@ -2535,10 +2513,10 @@ F 3 "" H 10450 8650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J17
 U 1 1 5E3E409B
 P 9000 10700
-F 0 "J?" V 8900 10800 50  0000 L CNN
+F 0 "J17" V 8900 10800 50  0000 L CNN
 F 1 "Valve_M4" V 9100 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 9000 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 9000 10700 50  0001 C CNN
@@ -2546,10 +2524,10 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/193516
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J16
 U 1 1 5E3E7606
 P 8600 10700
-F 0 "J?" V 8500 10800 50  0000 L CNN
+F 0 "J16" V 8500 10800 50  0000 L CNN
 F 1 "Valve_M3" V 8700 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 8600 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 8600 10700 50  0001 C CNN
@@ -2557,10 +2535,10 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/193516
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J15
 U 1 1 5E3E7EB4
 P 8200 10700
-F 0 "J?" V 8100 10800 50  0000 L CNN
+F 0 "J15" V 8100 10800 50  0000 L CNN
 F 1 "Valve_M2" V 8300 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 8200 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 8200 10700 50  0001 C CNN
@@ -2568,10 +2546,10 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/193516
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J?
+L Connector:Screw_Terminal_01x03 J4
 U 1 1 5E3E8575
 P 7800 10700
-F 0 "J?" V 7700 10800 50  0000 L CNN
+F 0 "J4" V 7700 10800 50  0000 L CNN
 F 1 "Valve_M1" V 7900 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 7800 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 7800 10700 50  0001 C CNN
@@ -2614,10 +2592,10 @@ Wire Wire Line
 	9100 10300 9250 10300
 Connection ~ 9100 10300
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 5E7108AC
 P 9250 10300
-F 0 "#PWR?" H 9250 10050 50  0001 C CNN
+F 0 "#PWR08" H 9250 10050 50  0001 C CNN
 F 1 "GND" H 9255 10127 50  0000 C CNN
 F 2 "" H 9250 10300 50  0001 C CNN
 F 3 "" H 9250 10300 50  0001 C CNN
@@ -2646,46 +2624,46 @@ Valve_M2_5V
 Text Label 7800 9600 3    50   ~ 0
 Valve_M1_5V
 Wire Wire Line
+	1000 6650 550  6650
+Wire Wire Line
+	1000 6750 550  6750
+Wire Wire Line
+	1000 6850 550  6850
+Wire Wire Line
 	1000 6950 550  6950
 Wire Wire Line
-	1000 7050 550  7050
+	1800 6650 2350 6650
 Wire Wire Line
-	1000 7150 550  7150
+	1800 6750 2350 6750
 Wire Wire Line
-	1000 7250 550  7250
+	1800 6850 2350 6850
 Wire Wire Line
 	1800 6950 2350 6950
-Wire Wire Line
-	1800 7050 2350 7050
-Wire Wire Line
-	1800 7150 2350 7150
-Wire Wire Line
-	1800 7250 2350 7250
-NoConn ~ 1000 7350
-NoConn ~ 1800 7350
-Text Label 550  6950 0    50   ~ 0
+NoConn ~ 1000 7050
+NoConn ~ 1800 7050
+Text Label 550  6650 0    50   ~ 0
 Valve_M1
-Text Label 550  7050 0    50   ~ 0
+Text Label 550  6750 0    50   ~ 0
 Valve_M2
-Text Label 550  7150 0    50   ~ 0
+Text Label 550  6850 0    50   ~ 0
 Valve_M3
-Text Label 550  7250 0    50   ~ 0
+Text Label 550  6950 0    50   ~ 0
 Valve_M4
-Text Label 2350 6950 2    50   ~ 0
+Text Label 2350 6650 2    50   ~ 0
 Valve_M1_5V
-Text Label 2350 7050 2    50   ~ 0
+Text Label 2350 6750 2    50   ~ 0
 Valve_M2_5V
-Text Label 2350 7150 2    50   ~ 0
+Text Label 2350 6850 2    50   ~ 0
 Valve_M3_5V
-Text Label 2350 7250 2    50   ~ 0
+Text Label 2350 6950 2    50   ~ 0
 Valve_M4_5V
 Text Notes 8900 8450 2    118  ~ 24
 Valve Servos
 $Comp
-L Device:R R?
+L Device:R R34
 U 1 1 5EB81D16
 P 11150 10150
-F 0 "R?" H 11200 10150 50  0000 L CNN
+F 0 "R34" H 11200 10150 50  0000 L CNN
 F 1 "360" V 11150 10100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 11080 10150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 11150 10150 50  0001 C CNN
@@ -2697,10 +2675,10 @@ Connection ~ 11150 10300
 Wire Wire Line
 	11150 10300 10900 10300
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 5EB840DB
 P 11000 10000
-F 0 "D?" H 11000 9900 50  0000 C CNN
+F 0 "D3" H 11000 9900 50  0000 C CNN
 F 1 "LED" H 11150 10050 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11000 10000 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 11000 10000 50  0001 C CNN
@@ -2714,10 +2692,10 @@ Wire Wire Line
 	10850 10050 10800 10050
 Connection ~ 10800 10050
 $Comp
-L Device:R R?
+L Device:R R10
 U 1 1 5EBBEE73
 P 10650 10150
-F 0 "R?" H 10700 10150 50  0000 L CNN
+F 0 "R10" H 10700 10150 50  0000 L CNN
 F 1 "360" V 10650 10100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10580 10150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 10650 10150 50  0001 C CNN
@@ -2729,10 +2707,10 @@ Connection ~ 10650 10300
 Wire Wire Line
 	10650 10300 10550 10300
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5EBC075A
 P 10650 9850
-F 0 "D?" V 10650 9750 50  0000 C CNN
+F 0 "D2" V 10650 9750 50  0000 C CNN
 F 1 "LED" V 10650 9750 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10650 9850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 10650 9850 50  0001 C CNN
@@ -2744,10 +2722,10 @@ Wire Wire Line
 	10650 9700 10450 9700
 Connection ~ 10450 9700
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5EBFAA25
 P 10300 10150
-F 0 "R?" H 10350 10150 50  0000 L CNN
+F 0 "R9" H 10350 10150 50  0000 L CNN
 F 1 "360" V 10300 10100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10230 10150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 10300 10150 50  0001 C CNN
@@ -2759,10 +2737,10 @@ Connection ~ 10300 10300
 Wire Wire Line
 	10300 10300 10200 10300
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5EBFB550
 P 10300 9850
-F 0 "D?" V 10300 9750 50  0000 C CNN
+F 0 "D1" V 10300 9750 50  0000 C CNN
 F 1 "LED" V 10300 9750 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10300 9850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 10300 9850 50  0001 C CNN
@@ -2778,10 +2756,10 @@ Connection ~ 10100 9600
 Wire Wire Line
 	10100 9600 10100 9350
 $Comp
-L Device:R R?
+L Device:R R35
 U 1 1 5EC35F57
 P 12550 5350
-F 0 "R?" V 12600 5100 50  0000 L CNN
+F 0 "R35" V 12600 5100 50  0000 L CNN
 F 1 "360" V 12550 5300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12480 5350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 12550 5350 50  0001 C CNN
@@ -2790,10 +2768,10 @@ F 4 "C25194" H 12550 5350 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D4
 U 1 1 5EC71648
 P 12850 5350
-F 0 "D?" H 12750 5400 50  0000 C CNN
+F 0 "D4" H 12750 5400 50  0000 C CNN
 F 1 "LED" H 13000 5400 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 5350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 12850 5350 50  0001 C CNN
@@ -2802,10 +2780,10 @@ F 4 "C72041" H 12850 5350 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R36
 U 1 1 5ECAD588
 P 12550 5650
-F 0 "R?" V 12600 5400 50  0000 L CNN
+F 0 "R36" V 12600 5400 50  0000 L CNN
 F 1 "360" V 12550 5600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12480 5650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 12550 5650 50  0001 C CNN
@@ -2814,10 +2792,10 @@ F 4 "C25194" H 12550 5650 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D15
 U 1 1 5ECAE42D
 P 12850 5650
-F 0 "D?" H 12750 5700 50  0000 C CNN
+F 0 "D15" H 12750 5700 50  0000 C CNN
 F 1 "LED" H 13000 5700 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 5650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 12850 5650 50  0001 C CNN
@@ -2826,10 +2804,10 @@ F 4 "C72041" H 12850 5650 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R37
 U 1 1 5ED24861
 P 12550 5950
-F 0 "R?" V 12600 5700 50  0000 L CNN
+F 0 "R37" V 12600 5700 50  0000 L CNN
 F 1 "360" V 12550 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12480 5950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 12550 5950 50  0001 C CNN
@@ -2838,10 +2816,10 @@ F 4 "C25194" H 12550 5950 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D16
 U 1 1 5ED254DA
 P 12850 5950
-F 0 "D?" H 12750 6000 50  0000 C CNN
+F 0 "D16" H 12750 6000 50  0000 C CNN
 F 1 "LED" H 13000 6000 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 5950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 12850 5950 50  0001 C CNN
@@ -2850,10 +2828,10 @@ F 4 "C72041" H 12850 5950 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R38
 U 1 1 5ED9CB68
 P 12550 6250
-F 0 "R?" V 12600 6000 50  0000 L CNN
+F 0 "R38" V 12600 6000 50  0000 L CNN
 F 1 "360" V 12550 6200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12480 6250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 12550 6250 50  0001 C CNN
@@ -2862,10 +2840,10 @@ F 4 "C25194" H 12550 6250 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D17
 U 1 1 5ED9D77D
 P 12850 6250
-F 0 "D?" H 12750 6300 50  0000 C CNN
+F 0 "D17" H 12750 6300 50  0000 C CNN
 F 1 "LED" H 13000 6300 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 6250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 12850 6250 50  0001 C CNN
@@ -2874,10 +2852,10 @@ F 4 "C72041" H 12850 6250 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R39
 U 1 1 5EE533F3
 P 12550 6550
-F 0 "R?" V 12600 6300 50  0000 L CNN
+F 0 "R39" V 12600 6300 50  0000 L CNN
 F 1 "360" V 12550 6500 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 12480 6550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" H 12550 6550 50  0001 C CNN
@@ -2886,10 +2864,10 @@ F 4 "C25194" H 12550 6550 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D18
 U 1 1 5EE561AC
 P 12850 6550
-F 0 "D?" H 12750 6600 50  0000 C CNN
+F 0 "D18" H 12750 6600 50  0000 C CNN
 F 1 "LED" H 13000 6600 50  0001 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 6550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H 12850 6550 50  0001 C CNN
@@ -2971,4 +2949,57 @@ Wire Wire Line
 	13200 5850 14850 5850
 Wire Notes Line
 	9500 8150 9500 11200
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5ED3DCA7
+P 6150 1350
+F 0 "JP2" H 6150 1555 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6150 1464 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6150 1350 50  0001 C CNN
+F 3 "~" H 6150 1350 50  0001 C CNN
+	1    6150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5ED7B1E0
+P 1200 4850
+F 0 "JP1" H 1200 4750 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1200 4964 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 1200 4850 50  0001 C CNN
+F 3 "~" H 1200 4850 50  0001 C CNN
+	1    1200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6250 1000 6250
+Wire Wire Line
+	1000 6250 1000 6550
+Connection ~ 1300 6250
+$Comp
+L power:GND #PWR016
+U 1 1 5EDF5677
+P 700 6300
+F 0 "#PWR016" H 700 6050 50  0001 C CNN
+F 1 "GND" H 705 6127 50  0000 C CNN
+F 2 "" H 700 6300 50  0001 C CNN
+F 3 "" H 700 6300 50  0001 C CNN
+	1    700  6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  6250 700  6300
+$Comp
+L Device:R R11
+U 1 1 5EE390F3
+P 850 6250
+F 0 "R11" V 930 6250 50  0000 C CNN
+F 1 "10K" V 850 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 780 6250 50  0001 C CNN
+F 3 "" H 850 6250 50  0001 C CNN
+F 4 "C17414" V 850 6250 50  0001 C CNN "LCSC"
+	1    850  6250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1000 6250
 $EndSCHEMATC
