@@ -3041,12 +3041,12 @@ GND
 Wire Wire Line
 	3750 7850 4350 7850
 $Comp
-L Connector_Generic:Conn_01x02 J23
+L Connector_Generic:Conn_01x04 J23
 U 1 1 5E8D6410
 P 3850 6950
 F 0 "J23" V 3950 6900 50  0000 C CNN
 F 1 "I2C_DBG" V 4050 6900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 6950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 6950 50  0001 C CNN
 F 3 "" H 3850 6950 50  0000 C CNN
 	1    3850 6950
 	1    0    0    -1  
@@ -3089,4 +3089,12 @@ F 3 "~" H 1950 10100 50  0001 C CNN
 	1    1950 10100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3650 6850 3050 6850
+Wire Wire Line
+	3650 7150 3050 7150
+Text Label 3050 6850 0    50   ~ 0
+3V3
+Text Label 3050 7150 0    50   ~ 0
+GND
 $EndSCHEMATC

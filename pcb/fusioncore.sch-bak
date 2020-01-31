@@ -3041,7 +3041,7 @@ GND
 Wire Wire Line
 	3750 7850 4350 7850
 $Comp
-L Connector_Generic:Conn_01x02 J23
+L Connector_Generic:Conn_01x04 J23
 U 1 1 5E8D6410
 P 3850 6950
 F 0 "J23" V 3950 6900 50  0000 C CNN
@@ -3068,10 +3068,10 @@ Wire Notes Line
 Text Notes 700  9850 0    118  ~ 24
 JLC Tooling Holes
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H5
 U 1 1 5E48D44C
 P 1150 10100
-F 0 "H?" H 1250 10146 50  0000 L CNN
+F 0 "H5" H 1250 10146 50  0000 L CNN
 F 1 "ToolingHole" H 1250 10055 50  0000 L CNN
 F 2 "project_footprints:JLC_Tooling_Hole" H 1150 10100 50  0001 C CNN
 F 3 "~" H 1150 10100 50  0001 C CNN
@@ -3079,14 +3079,22 @@ F 3 "~" H 1150 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H6
 U 1 1 5E48DB8E
 P 1950 10100
-F 0 "H?" H 2050 10146 50  0000 L CNN
+F 0 "H6" H 2050 10146 50  0000 L CNN
 F 1 "ToolingHole" H 2050 10055 50  0000 L CNN
 F 2 "project_footprints:JLC_Tooling_Hole" H 1950 10100 50  0001 C CNN
 F 3 "~" H 1950 10100 50  0001 C CNN
 	1    1950 10100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3650 6850 3050 6850
+Wire Wire Line
+	3650 7150 3050 7150
+Text Label 3050 6850 0    50   ~ 0
+3V3
+Text Label 3050 7150 0    50   ~ 0
+GND
 $EndSCHEMATC
