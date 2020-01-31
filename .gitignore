@@ -1,2 +1,5 @@
 gerber
+pcb/fusioncore
+pcb/assembly
+pcb/fusioncore.xml
 *.pdf
