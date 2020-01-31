@@ -198,7 +198,8 @@ P 2000 4600
 F 0 "U2" H 2350 4950 50  0000 C CNN
 F 1 "CAT24C32" H 1750 4950 50  0000 C CNN
 F 2 "Package_SOIC:SOIC-8_3.9x4.9mm_P1.27mm" H 2000 4600 50  0001 C CNN
-F 3 "" H 2000 4600 50  0000 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809291220_ON-Semicon-CAT24C32WI-GT3_C81193.pdf" H 2000 4600 50  0001 C CNN
+F 4 "C81193" H 2000 4600 50  0001 C CNN "LCSC"
 	1    2000 4600
 	1    0    0    -1  
 $EndComp
@@ -1341,31 +1342,32 @@ Wire Wire Line
 Wire Wire Line
 	12550 2150 13300 2150
 $Comp
-L Switch:SW_DIP_x01 SW1
+L Switch:SW_SPDT SW1
 U 1 1 5F9F56A0
-P 15350 1650
-F 0 "SW1" H 15350 1917 50  0000 C CNN
-F 1 "POWER_ON" H 15350 1826 50  0000 C CNN
-F 2 "" H 15350 1650 50  0001 C CNN
-F 3 "~" H 15350 1650 50  0001 C CNN
-	1    15350 1650
+P 15250 1650
+F 0 "SW1" H 15250 1917 50  0000 C CNN
+F 1 "POWER_ON" H 15250 1826 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 15250 1650 50  0001 C CNN
+F 3 "https://dznh3ojzb2azq.cloudfront.net/products/Slide/JS/documents/datasheet.pdf" H 15250 1650 50  0001 C CNN
+F 4 "401-2001-ND" H 15250 1650 50  0001 C CNN "Digikey"
+	1    15250 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5F9F724F
-P 15850 1650
-F 0 "#PWR0104" H 15850 1400 50  0001 C CNN
-F 1 "GND" H 15855 1477 50  0000 C CNN
-F 2 "" H 15850 1650 50  0001 C CNN
-F 3 "" H 15850 1650 50  0001 C CNN
-	1    15850 1650
+P 15650 1750
+F 0 "#PWR0104" H 15650 1500 50  0001 C CNN
+F 1 "GND" H 15655 1577 50  0000 C CNN
+F 2 "" H 15650 1750 50  0001 C CNN
+F 3 "" H 15650 1750 50  0001 C CNN
+	1    15650 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	13800 1650 15050 1650
 Wire Wire Line
-	15650 1650 15850 1650
+	15450 1750 15650 1750
 Connection ~ 11950 3650
 Connection ~ 11950 4100
 Wire Wire Line
@@ -2233,86 +2235,86 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5E238E97
+P 3650 6050
+F 0 "TP2" V 3604 6238 50  0000 L CNN
+F 1 "3V3_PI" V 3695 6238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6050 50  0001 C CNN
+F 3 "~" H 3850 6050 50  0001 C CNN
+	1    3650 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E238B2E
+P 3650 6250
+F 0 "TP3" V 3604 6438 50  0000 L CNN
+F 1 "3V3" V 3695 6438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6250 50  0001 C CNN
+F 3 "~" H 3850 6250 50  0001 C CNN
+	1    3650 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E2387C0
+P 3650 6450
+F 0 "TP4" V 3604 6638 50  0000 L CNN
+F 1 "5V" V 3695 6638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6450 50  0001 C CNN
+F 3 "~" H 3850 6450 50  0001 C CNN
+	1    3650 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5E236258
 P 3650 6650
-F 0 "TP2" V 3604 6838 50  0000 L CNN
-F 1 "3V3_PI" V 3695 6838 50  0000 L CNN
+F 0 "TP5" V 3604 6838 50  0000 L CNN
+F 1 "12V" V 3695 6838 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6650 50  0001 C CNN
 F 3 "~" H 3850 6650 50  0001 C CNN
 	1    3650 6650
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
-U 1 1 5E238B2E
-P 3650 6850
-F 0 "TP3" V 3604 7038 50  0000 L CNN
-F 1 "3V3" V 3695 7038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6850 50  0001 C CNN
-F 3 "~" H 3850 6850 50  0001 C CNN
-	1    3650 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5E2387C0
-P 3650 7050
-F 0 "TP4" V 3604 7238 50  0000 L CNN
-F 1 "5V" V 3695 7238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 7050 50  0001 C CNN
-F 3 "~" H 3850 7050 50  0001 C CNN
-	1    3650 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5E236258
-P 3650 7250
-F 0 "TP5" V 3604 7438 50  0000 L CNN
-F 1 "12V" V 3695 7438 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 7250 50  0001 C CNN
-F 3 "~" H 3850 7250 50  0001 C CNN
-	1    3650 7250
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:TestPoint TP1
 U 1 1 5E427CC4
-P 3650 6450
-F 0 "TP1" V 3604 6638 50  0000 L CNN
-F 1 "GND" V 3695 6638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6450 50  0001 C CNN
-F 3 "~" H 3850 6450 50  0001 C CNN
-	1    3650 6450
+P 3650 5850
+F 0 "TP1" V 3604 6038 50  0000 L CNN
+F 1 "GND" V 3695 6038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 5850 50  0001 C CNN
+F 3 "~" H 3850 5850 50  0001 C CNN
+	1    3650 5850
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3650 5850 3050 5850
+Wire Wire Line
+	3650 6050 3050 6050
+Wire Wire Line
+	3650 6250 3050 6250
 Wire Wire Line
 	3650 6450 3050 6450
 Wire Wire Line
 	3650 6650 3050 6650
-Wire Wire Line
-	3650 6850 3050 6850
-Wire Wire Line
-	3650 7050 3050 7050
-Wire Wire Line
-	3650 7250 3050 7250
 $Comp
 L power:GND #PWR0114
 U 1 1 5E560038
-P 3050 6450
-F 0 "#PWR0114" H 3050 6200 50  0001 C CNN
-F 1 "GND" V 3055 6322 50  0000 R CNN
-F 2 "" H 3050 6450 50  0001 C CNN
-F 3 "" H 3050 6450 50  0001 C CNN
-	1    3050 6450
+P 3050 5850
+F 0 "#PWR0114" H 3050 5600 50  0001 C CNN
+F 1 "GND" V 3055 5722 50  0000 R CNN
+F 2 "" H 3050 5850 50  0001 C CNN
+F 3 "" H 3050 5850 50  0001 C CNN
+	1    3050 5850
 	0    1    1    0   
 $EndComp
-Text Label 3050 6650 0    50   ~ 0
+Text Label 3050 6050 0    50   ~ 0
 3V3_PI
-Text Label 3050 6850 0    50   ~ 0
+Text Label 3050 6250 0    50   ~ 0
 3V3
-Text Label 3050 7050 0    50   ~ 0
+Text Label 3050 6450 0    50   ~ 0
 5V
-Text Label 3050 7250 0    50   ~ 0
+Text Label 3050 6650 0    50   ~ 0
 12V
 Text Notes 3000 5750 0    118  ~ 24
 Testpoints
@@ -3002,4 +3004,63 @@ F 4 "C17414" V 850 6250 50  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 Connection ~ 1000 6250
+Wire Notes Line
+	2650 7250 4400 7250
+Text Notes 2700 7450 0    102  ~ 20
+Expansion Connector
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J18
+U 1 1 5E55E4B6
+P 3450 7950
+F 0 "J18" H 3500 8267 50  0000 C CNN
+F 1 "Conn_02x03_Top_Bottom" H 3500 8176 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 3450 7950 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/430450612_sd.pdf" H 3450 7950 50  0001 C CNN
+F 4 "WM1791-ND " H 3450 7950 50  0001 C CNN "Digikey"
+	1    3450 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 7850 2700 7850
+Wire Wire Line
+	3250 7950 2700 7950
+Wire Wire Line
+	3250 8050 2700 8050
+Wire Wire Line
+	3750 8050 4350 8050
+Wire Wire Line
+	3750 7950 4350 7950
+Text Label 2700 7850 0    50   ~ 0
+I2C_SCL
+Text Label 2700 8050 0    50   ~ 0
+I2C_SDA
+Text Label 4350 8050 2    50   ~ 0
+5V
+Text Label 4350 7850 2    50   ~ 0
+12V
+Text Label 4350 7950 2    50   ~ 0
+GND
+Text Label 2700 7950 0    50   ~ 0
+GND
+Wire Wire Line
+	3750 7850 4350 7850
+$Comp
+L Connector_Generic:Conn_01x02 J23
+U 1 1 5E8D6410
+P 3850 6950
+F 0 "J23" V 3950 6900 50  0000 C CNN
+F 1 "I2C_DBG" V 4050 6900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 6950 50  0001 C CNN
+F 3 "" H 3850 6950 50  0000 C CNN
+	1    3850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6950 3050 6950
+Wire Wire Line
+	3650 7050 3050 7050
+Text Label 3050 6950 0    50   ~ 0
+I2C_SCL
+Text Label 3050 7050 0    50   ~ 0
+I2C_SDA
 $EndSCHEMATC
