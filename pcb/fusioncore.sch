@@ -16,45 +16,45 @@ $EndDescr
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5834BC4A
-P 1200 9800
-F 0 "H1" H 1050 9900 60  0000 C CNN
-F 1 "3mm_Mounting_Hole" H 1200 9650 60  0000 C CNN
-F 2 "project_footprints:NPTH_3mm_ID" H 1100 9800 60  0001 C CNN
-F 3 "" H 1100 9800 60  0001 C CNN
-	1    1200 9800
+P 1150 8650
+F 0 "H1" H 1000 8750 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 1150 8500 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 1050 8650 60  0001 C CNN
+F 3 "" H 1050 8650 60  0001 C CNN
+	1    1150 8650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5834BCDF
-P 2200 9800
-F 0 "H2" H 2050 9900 60  0000 C CNN
-F 1 "3mm_Mounting_Hole" H 2200 9650 60  0000 C CNN
-F 2 "project_footprints:NPTH_3mm_ID" H 2100 9800 60  0001 C CNN
-F 3 "" H 2100 9800 60  0001 C CNN
-	1    2200 9800
+P 2150 8650
+F 0 "H2" H 2000 8750 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 2150 8500 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 2050 8650 60  0001 C CNN
+F 3 "" H 2050 8650 60  0001 C CNN
+	1    2150 8650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5834BD62
-P 1200 10350
-F 0 "H3" H 1050 10450 60  0000 C CNN
-F 1 "3mm_Mounting_Hole" H 1200 10200 60  0000 C CNN
-F 2 "project_footprints:NPTH_3mm_ID" H 1100 10350 60  0001 C CNN
-F 3 "" H 1100 10350 60  0001 C CNN
-	1    1200 10350
+P 1150 9200
+F 0 "H3" H 1000 9300 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 1150 9050 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 1050 9200 60  0001 C CNN
+F 3 "" H 1050 9200 60  0001 C CNN
+	1    1150 9200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5834BDED
-P 2250 10350
-F 0 "H4" H 2100 10450 60  0000 C CNN
-F 1 "3mm_Mounting_Hole" H 2250 10200 60  0000 C CNN
-F 2 "project_footprints:NPTH_3mm_ID" H 2150 10350 60  0001 C CNN
-F 3 "" H 2150 10350 60  0001 C CNN
-	1    2250 10350
+P 2200 9200
+F 0 "H4" H 2050 9300 60  0000 C CNN
+F 1 "3mm_Mounting_Hole" H 2200 9050 60  0000 C CNN
+F 2 "project_footprints:NPTH_3mm_ID" H 2100 9200 60  0001 C CNN
+F 3 "" H 2100 9200 60  0001 C CNN
+	1    2200 9200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -295,7 +295,7 @@ F 3 "" H 950 4900 50  0000 C CNN
 $EndComp
 Text Notes 1900 3550 0    118  ~ 24
 HAT EEPROM
-Text Notes 850  9500 0    118  ~ 24
+Text Notes 800  8350 0    118  ~ 24
 Mounting Holes
 Text Notes 1550 750  0    118  ~ 24
 40-Pin HAT Connector
@@ -2472,8 +2472,6 @@ Wire Notes Line
 Wire Notes Line
 	2750 8150 2750 11200
 Wire Notes Line
-	2750 11200 11750 11200
-Wire Notes Line
 	13650 2950 13650 4900
 Wire Notes Line
 	4400 5400 500  5400
@@ -2481,8 +2479,6 @@ Wire Notes Line
 	4400 500  4400 8150
 Wire Notes Line
 	500  8150 16050 8150
-Wire Notes Line
-	500  500  500  8150
 Wire Notes Line
 	500  500  16050 500 
 Text Notes 9000 3700 2    118  ~ 24
@@ -3063,4 +3059,34 @@ Text Label 3050 6950 0    50   ~ 0
 I2C_SCL
 Text Label 3050 7050 0    50   ~ 0
 I2C_SDA
+Wire Notes Line
+	500  11200 11750 11200
+Wire Notes Line
+	500  500  500  11200
+Wire Notes Line
+	2750 9600 500  9600
+Text Notes 700  9850 0    118  ~ 24
+JLC Tooling Holes
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5E48D44C
+P 1150 10100
+F 0 "H5" H 1250 10146 50  0000 L CNN
+F 1 "ToolingHole" H 1250 10055 50  0000 L CNN
+F 2 "project_footprints:JLC_Tooling_Hole" H 1150 10100 50  0001 C CNN
+F 3 "~" H 1150 10100 50  0001 C CNN
+	1    1150 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5E48DB8E
+P 1950 10100
+F 0 "H6" H 2050 10146 50  0000 L CNN
+F 1 "ToolingHole" H 2050 10055 50  0000 L CNN
+F 2 "project_footprints:JLC_Tooling_Hole" H 1950 10100 50  0001 C CNN
+F 3 "~" H 1950 10100 50  0001 C CNN
+	1    1950 10100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
