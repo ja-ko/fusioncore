@@ -2662,6 +2662,7 @@ F 1 "INA226" H 5850 4350 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6450 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 6000 4700 50  0001 C CNN
 F 4 "C49851" H 5650 4800 50  0001 C CNN "LCSC"
+F 5 "0x44" H 5650 4800 50  0001 C CNN "Address"
 	1    5650 4800
 	1    0    0    -1  
 $EndComp
@@ -2727,6 +2728,7 @@ F 1 "INA226" H 8200 4350 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 8800 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 8350 4700 50  0001 C CNN
 F 4 "C49851" H 8000 4800 50  0001 C CNN "LCSC"
+F 5 "0x45" H 8000 4800 50  0001 C CNN "Address"
 	1    8000 4800
 	1    0    0    -1  
 $EndComp
@@ -2890,6 +2892,7 @@ F 1 "INA226" H 10450 4350 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 11050 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 10600 4700 50  0001 C CNN
 F 4 "C49851" H 10250 4800 50  0001 C CNN "LCSC"
+F 5 "0x46" H 10250 4800 50  0001 C CNN "Address"
 	1    10250 4800
 	1    0    0    -1  
 $EndComp
@@ -2986,7 +2989,7 @@ $EndComp
 Wire Wire Line
 	10650 4900 11100 4900
 Wire Wire Line
-	10650 4800 11100 4800
+	10650 4800 10750 4800
 Text Label 11100 4800 2    50   ~ 0
 I2C_SDA
 Text Label 11100 4900 2    50   ~ 0
@@ -3030,4 +3033,41 @@ Text Notes 8400 3700 2    118  ~ 24
 5V Monitor
 Text Notes 10700 3700 2    118  ~ 24
 12V Monitor
+Wire Wire Line
+	6050 4500 6550 4500
+Text Label 6550 4500 2    50   ~ 0
+3V3
+$Comp
+L power:GND #PWR0101
+U 1 1 5F65C54B
+P 6150 4550
+F 0 "#PWR0101" H 6150 4300 50  0001 C CNN
+F 1 "GND" H 6155 4377 50  0000 C CNN
+F 2 "" H 6150 4550 50  0001 C CNN
+F 3 "" H 6150 4550 50  0001 C CNN
+	1    6150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4600 6050 4550
+Wire Wire Line
+	6050 4550 6150 4550
+Wire Wire Line
+	8400 4500 8900 4500
+Text Label 8900 4500 2    50   ~ 0
+3V3
+Wire Wire Line
+	8400 4600 8400 4500
+Connection ~ 8400 4500
+Wire Wire Line
+	10650 4500 11150 4500
+Text Label 11150 4500 2    50   ~ 0
+3V3
+Wire Wire Line
+	10650 4600 10750 4600
+Wire Wire Line
+	10750 4600 10750 4800
+Connection ~ 10750 4800
+Wire Wire Line
+	10750 4800 11100 4800
 $EndSCHEMATC
