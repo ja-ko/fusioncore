@@ -1762,9 +1762,9 @@ U 1 1 5F09BD9F
 P 4750 4750
 F 0 "R25" V 4650 4750 50  0000 C CNN
 F 1 "0.03" V 4750 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4680 4750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 4750 50  0001 C CNN
 F 3 "~" H 4750 4750 50  0001 C CNN
-F 4 "C87220" V 4750 4750 50  0001 C CNN "LCSC"
+F 4 "C247605" V 4750 4750 50  0001 C CNN "LCSC"
 	1    4750 4750
 	1    0    0    -1  
 $EndComp
@@ -1827,47 +1827,36 @@ Wire Wire Line
 Wire Wire Line
 	6550 1350 6550 1650
 $Comp
-L Connector:TestPoint TP2
-U 1 1 5E238E97
+L Connector:TestPoint TP3
+U 1 1 5E238B2E
 P 3650 6050
-F 0 "TP2" V 3604 6238 50  0000 L CNN
-F 1 "3V3_PI" V 3695 6238 50  0000 L CNN
+F 0 "TP3" V 3604 6238 50  0000 L CNN
+F 1 "3V3" V 3695 6238 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6050 50  0001 C CNN
 F 3 "~" H 3850 6050 50  0001 C CNN
 	1    3650 6050
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP3
-U 1 1 5E238B2E
+L Connector:TestPoint TP4
+U 1 1 5E2387C0
 P 3650 6250
-F 0 "TP3" V 3604 6438 50  0000 L CNN
-F 1 "3V3" V 3695 6438 50  0000 L CNN
+F 0 "TP4" V 3604 6438 50  0000 L CNN
+F 1 "5V" V 3695 6438 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6250 50  0001 C CNN
 F 3 "~" H 3850 6250 50  0001 C CNN
 	1    3650 6250
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP4
-U 1 1 5E2387C0
+L Connector:TestPoint TP5
+U 1 1 5E236258
 P 3650 6450
-F 0 "TP4" V 3604 6638 50  0000 L CNN
-F 1 "5V" V 3695 6638 50  0000 L CNN
+F 0 "TP5" V 3604 6638 50  0000 L CNN
+F 1 "12V" V 3695 6638 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6450 50  0001 C CNN
 F 3 "~" H 3850 6450 50  0001 C CNN
 	1    3650 6450
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5E236258
-P 3650 6650
-F 0 "TP5" V 3604 6838 50  0000 L CNN
-F 1 "12V" V 3695 6838 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 3850 6650 50  0001 C CNN
-F 3 "~" H 3850 6650 50  0001 C CNN
-	1    3650 6650
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1889,8 +1878,6 @@ Wire Wire Line
 	3650 6250 3050 6250
 Wire Wire Line
 	3650 6450 3050 6450
-Wire Wire Line
-	3650 6650 3050 6650
 $Comp
 L power:GND #PWR0114
 U 1 1 5E560038
@@ -1903,12 +1890,10 @@ F 3 "" H 3050 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 3050 6050 0    50   ~ 0
-3V3_PI
-Text Label 3050 6250 0    50   ~ 0
 3V3
-Text Label 3050 6450 0    50   ~ 0
+Text Label 3050 6250 0    50   ~ 0
 5V
-Text Label 3050 6650 0    50   ~ 0
+Text Label 3050 6450 0    50   ~ 0
 12V
 Text Notes 3000 5750 0    118  ~ 24
 Testpoints
@@ -2604,21 +2589,21 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J23
 U 1 1 5E8D6410
-P 3850 6950
-F 0 "J23" V 3950 6900 50  0000 C CNN
-F 1 "I2C_DBG" V 4050 6900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 6950 50  0001 C CNN
-F 3 "" H 3850 6950 50  0000 C CNN
-	1    3850 6950
+P 3850 6750
+F 0 "J23" V 3950 6700 50  0000 C CNN
+F 1 "I2C_DBG" V 4050 6700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 6750 50  0001 C CNN
+F 3 "" H 3850 6750 50  0000 C CNN
+	1    3850 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 6950 3050 6950
+	3650 6750 3050 6750
 Wire Wire Line
-	3650 7050 3050 7050
-Text Label 3050 6950 0    50   ~ 0
+	3650 6850 3050 6850
+Text Label 3050 6750 0    50   ~ 0
 I2C_SCL
-Text Label 3050 7050 0    50   ~ 0
+Text Label 3050 6850 0    50   ~ 0
 I2C_SDA
 Wire Notes Line
 	500  11200 11750 11200
@@ -2651,12 +2636,12 @@ F 3 "~" H 1950 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 6850 3050 6850
+	3650 6650 3050 6650
 Wire Wire Line
-	3650 7150 3050 7150
-Text Label 3050 6850 0    50   ~ 0
+	3650 6950 3050 6950
+Text Label 3050 6650 0    50   ~ 0
 3V3
-Text Label 3050 7150 0    50   ~ 0
+Text Label 3050 6950 0    50   ~ 0
 GND
 Wire Wire Line
 	6150 4800 6650 4800
