@@ -3,3 +3,4 @@ pcb/fusioncore
 pcb/assembly
 pcb/fusioncore.xml
 *.pdf
+*_jlc.csv
