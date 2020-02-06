@@ -756,7 +756,7 @@ F 4 "C20917" H 12150 7500 50  0001 C CNN "LCSC"
 	1    12150 7500
 	1    0    0    -1  
 $EndComp
-Text Notes 10600 8400 0    118  ~ 24
+Text Notes 10350 8400 0    118  ~ 24
 Valves
 $Comp
 L Connector:Screw_Terminal_01x02 J23
