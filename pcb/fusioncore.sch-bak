@@ -476,8 +476,9 @@ U 1 1 5E1CBB14
 P 15350 3800
 F 0 "J4" H 15430 3842 50  0000 L CNN
 F 1 "Temperature" H 15430 3751 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 15350 3800 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15350 3800 50  0001 C CNN
+F 2 "project_footprints:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x03_P3.50mm_Diagonal" H 15350 3800 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/Combicon%20Compact%20Series.pdf" H 15350 3800 50  0001 C CNN
+F 4 " 277-1780-ND" H 15350 3800 50  0001 C CNN "Digikey"
 	1    15350 3800
 	1    0    0    -1  
 $EndComp
@@ -1684,8 +1685,9 @@ U 1 1 5E828DD5
 P 15350 9200
 F 0 "J15" V 15222 9280 50  0000 L CNN
 F 1 "Trigger" H 15700 9150 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15350 9200 50  0001 C CNN
-F 3 "~" H 15350 9200 50  0001 C CNN
+F 2 "project_footprints:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Diagonal" H 15350 9200 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/Combicon%20Compact%20Series.pdf" H 15350 9200 50  0001 C CNN
+F 4 " 277-1779-ND" V 15350 9200 50  0001 C CNN "Digikey"
 	1    15350 9200
 	1    0    0    -1  
 $EndComp
@@ -1851,7 +1853,6 @@ Pump_M1
 Wire Wire Line
 	1900 2950 700  2950
 NoConn ~ 3100 2750
-NoConn ~ 3100 2950
 Wire Wire Line
 	1300 6250 1300 5900
 Wire Wire Line
@@ -1942,8 +1943,6 @@ Wire Notes Line
 	16050 500  16050 9850
 Wire Notes Line
 	11750 9850 16050 9850
-Wire Notes Line
-	7450 8150 7450 11200
 Wire Notes Line
 	11750 8150 11750 11200
 Wire Notes Line
@@ -3140,11 +3139,11 @@ INB-
 Text Label 6500 10000 1    50   ~ 0
 INB+
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5E5CE1FB
 P 5700 10550
-F 0 "J?" H 5700 10150 50  0000 C CNN
-F 1 "I2C_DBG" H 5650 10250 50  0000 C CNN
+F 0 "J6" H 5700 10150 50  0000 C CNN
+F 1 "WEIGHT_B" H 5650 10250 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5700 10550 50  0001 C CNN
 F 3 "" H 5700 10550 50  0000 C CNN
 	1    5700 10550
@@ -3163,10 +3162,10 @@ Wire Wire Line
 Wire Wire Line
 	6500 9650 6500 10450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5E776A6B
 P 6050 10550
-F 0 "#PWR?" H 6050 10300 50  0001 C CNN
+F 0 "#PWR012" H 6050 10300 50  0001 C CNN
 F 1 "GND" H 6055 10377 50  0000 C CNN
 F 2 "" H 6050 10550 50  0001 C CNN
 F 3 "" H 6050 10550 50  0001 C CNN
@@ -3186,4 +3185,148 @@ Wire Wire Line
 Connection ~ 3500 9350
 Wire Wire Line
 	3500 9350 3650 9350
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5E603C52
+P 15700 10300
+F 0 "#LOGO1" H 15700 10575 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 15700 10075 50  0001 C CNN
+F 2 "" H 15700 10300 50  0001 C CNN
+F 3 "~" H 15700 10300 50  0001 C CNN
+	1    15700 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J24
+U 1 1 5E60ECEB
+P 6550 7800
+F 0 "J24" H 6650 7750 50  0000 L CNN
+F 1 "Cooling_Copressor" H 6550 7600 50  0000 C TNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 6550 7800 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 6550 7800 50  0001 C CNN
+	1    6550 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 7900 5100 7900
+Wire Wire Line
+	5100 7900 5100 7600
+$Comp
+L Transistor_BJT:2N3904 Q12
+U 1 1 5E6A5955
+P 6550 7300
+F 0 "Q12" V 6878 7300 50  0000 C CNN
+F 1 "2N3904" V 6787 7300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6750 7225 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/KEC-Semicon-2N3904S-RTK-PS_C18536.pdf" H 6550 7300 50  0001 L CNN
+F 4 "C18536" H 6550 7300 50  0001 C CNN "LCSC"
+	1    6550 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D19
+U 1 1 5E6A8FA4
+P 5400 6700
+F 0 "D19" H 5450 6750 50  0000 L CNN
+F 1 "D" V 5445 6768 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" V 5400 6700 50  0001 C CNN
+F 3 "~" V 5400 6700 50  0001 C CNN
+F 4 "C22452" V 5400 6700 50  0001 C CNN "LCSC"
+	1    5400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 7200 5850 7200
+Wire Wire Line
+	5850 7200 5850 6700
+Wire Wire Line
+	5850 6700 5500 6700
+Wire Wire Line
+	5100 7200 4950 7200
+Wire Wire Line
+	4950 7200 4950 6700
+Wire Wire Line
+	4950 6700 5300 6700
+Wire Wire Line
+	4950 7200 4450 7200
+Connection ~ 4950 7200
+Text Label 4450 7200 0    50   ~ 0
+5V
+Wire Wire Line
+	5850 7200 6350 7200
+Connection ~ 5850 7200
+Wire Wire Line
+	6750 7200 7250 7200
+$Comp
+L power:GND #PWR0103
+U 1 1 5E904F19
+P 7250 7200
+F 0 "#PWR0103" H 7250 6950 50  0001 C CNN
+F 1 "GND" H 7255 7027 50  0000 C CNN
+F 2 "" H 7250 7200 50  0001 C CNN
+F 3 "" H 7250 7200 50  0001 C CNN
+	1    7250 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 7500 7250 7500
+Text Label 7250 7500 2    50   ~ 0
+Cooler
+$Comp
+L Device:R R34
+U 1 1 5E99FEBD
+P 6700 6700
+F 0 "R34" V 6650 6900 50  0000 C CNN
+F 1 "150" V 6700 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6630 6700 50  0001 C CNN
+F 3 "~" H 6700 6700 50  0001 C CNN
+F 4 "C17471" V 6700 6700 50  0001 C CNN "LCSC"
+	1    6700 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 5E9A1CDC
+P 6300 6700
+F 0 "D20" H 6450 6750 50  0000 C CNN
+F 1 "COOL" H 6300 6600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 6700 50  0001 C CNN
+F 3 "~" H 6300 6700 50  0001 C CNN
+F 4 "C2296" H 6300 6700 50  0001 C CNN "LCSC"
+	1    6300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 6700 6850 6700
+Wire Wire Line
+	6550 6700 6450 6700
+Wire Wire Line
+	6150 6700 5850 6700
+Connection ~ 5850 6700
+Text Label 7250 6700 2    50   ~ 0
+5V
+Wire Notes Line
+	7450 6100 7450 11150
+Text Notes 6200 6400 2    118  ~ 24
+Cooler
+$Comp
+L Relay:G5Q-1A K1
+U 1 1 5EC7061B
+P 5400 7400
+F 0 "K1" V 4833 7400 50  0000 C CNN
+F 1 "G5Q-1A" V 4924 7400 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 5750 7350 50  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5q.pdf" H 5400 7400 50  0001 C CNN
+F 4 " Z223-ND" V 5400 7400 50  0001 C CNN "Digikey"
+	1    5400 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 7600 5700 7600
+Wire Wire Line
+	6350 7600 6350 7800
+Wire Wire Line
+	3100 2950 4300 2950
+Text Label 4300 2950 2    50   ~ 0
+Cooler
 $EndSCHEMATC
