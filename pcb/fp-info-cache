@@ -1,4 +1,4 @@
-16950542670225179
+16950542681164085
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75278,13 +75278,6 @@ NPTH_3mm_ID
 0
 0
 project_footprints
-Relay_SPST_Omron_G7L
-Relay SPDT Omron Serie G6E
-Relay SPDT Omron Serie G6E 1x um
-0
-5
-5
-project_footprints
 SOIC127P1032X265-20N
 
 
@@ -75307,6 +75300,13 @@ TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x03_P3.50mm_Diagonal
 3
 project_footprints
 fusioncore_logo
+
+
+0
+0
+0
+project_footprints
+subraum
 
 
 0
