@@ -520,6 +520,7 @@ F 0 "J7" H 15230 5442 50  0000 L CNN
 F 1 "Pump_Cold" H 15230 5351 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 5450 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 5450 50  0001 C CNN
+F 4 "277-1667-ND" H 15150 5450 50  0001 C CNN "Digikey"
 	1    15150 5450
 	1    0    0    -1  
 $EndComp
@@ -531,6 +532,7 @@ F 0 "J8" H 15230 5742 50  0000 L CNN
 F 1 "Pump_Warm" H 15230 5651 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 5750 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 5750 50  0001 C CNN
+F 4 "277-1667-ND" H 15150 5750 50  0001 C CNN "Digikey"
 	1    15150 5750
 	1    0    0    -1  
 $EndComp
@@ -542,6 +544,7 @@ F 0 "J9" H 15230 6042 50  0000 L CNN
 F 1 "Pump_Air" H 15230 5951 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 6050 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 6050 50  0001 C CNN
+F 4 "277-1667-ND" H 15150 6050 50  0001 C CNN "Digikey"
 	1    15150 6050
 	1    0    0    -1  
 $EndComp
@@ -553,6 +556,7 @@ F 0 "J10" H 15230 6342 50  0000 L CNN
 F 1 "Pump_Misc_1" H 15230 6251 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 6350 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 6350 50  0001 C CNN
+F 4 "277-1667-ND" H 15150 6350 50  0001 C CNN "Digikey"
 	1    15150 6350
 	1    0    0    -1  
 $EndComp
@@ -564,6 +568,7 @@ F 0 "J11" H 15230 6642 50  0000 L CNN
 F 1 "Pump_Misc_2" H 15230 6551 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 15150 6650 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 15150 6650 50  0001 C CNN
+F 4 "277-1667-ND" H 15150 6650 50  0001 C CNN "Digikey"
 	1    15150 6650
 	1    0    0    -1  
 $EndComp
@@ -721,6 +726,7 @@ F 0 "J23" V 10772 10780 50  0000 L CNN
 F 1 "Valve_Air_Out" V 11000 10650 50  0000 C TNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 10900 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 10900 10700 50  0001 C CNN
+F 4 "277-1667-ND" V 10900 10700 50  0001 C CNN "Digikey"
 	1    10900 10700
 	0    1    1    0   
 $EndComp
@@ -732,6 +738,7 @@ F 0 "J22" V 10422 10780 50  0000 L CNN
 F 1 "Valve_Air_Rum" V 10750 10650 50  0000 C TNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 10550 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 10550 10700 50  0001 C CNN
+F 4 "277-1667-ND" V 10550 10700 50  0001 C CNN "Digikey"
 	1    10550 10700
 	0    1    1    0   
 $EndComp
@@ -743,6 +750,7 @@ F 0 "J21" V 10072 10780 50  0000 L CNN
 F 1 "Valve_Air_Lime" V 10300 10650 50  0000 C TNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 10200 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 10200 10700 50  0001 C CNN
+F 4 "277-1667-ND" V 10200 10700 50  0001 C CNN "Digikey"
 	1    10200 10700
 	0    1    1    0   
 $EndComp

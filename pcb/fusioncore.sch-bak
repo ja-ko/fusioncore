@@ -3317,7 +3317,7 @@ F 0 "K1" V 4833 7400 50  0000 C CNN
 F 1 "G5Q-1A" V 4924 7400 50  0000 C CNN
 F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 5750 7350 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5q.pdf" H 5400 7400 50  0001 C CNN
-F 4 " Z223-ND" V 5400 7400 50  0001 C CNN "Digikey"
+F 4 "Z3632-ND" V 5400 7400 50  0001 C CNN "Digikey"
 	1    5400 7400
 	0    1    1    0   
 $EndComp
