@@ -65,6 +65,7 @@ F 0 "J1" H 2850 1350 50  0000 C CNN
 F 1 "40HAT" H 2200 1350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2500 1450 50  0001 C CNN
 F 3 "" H 1800 1250 50  0000 C CNN
+F 4 "952-2150-ND‎" H 2500 1250 50  0001 C CNN "Digikey"
 	1    2500 1250
 	1    0    0    -1  
 $EndComp
@@ -103,6 +104,7 @@ F 1 "DMMT5401" H 6050 2250 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 6050 2175 50  0001 L CIN
 F 3 "" H 5850 2250 50  0000 L CNN
 F 4 "C154733" H 5850 2250 50  0001 C CNN "LCSC"
+F 5 " DMMT5401-7-F" H 5850 2250 50  0001 C CNN "Digikey"
 	1    5850 2250
 	-1   0    0    1   
 $EndComp
@@ -1031,6 +1033,7 @@ F 0 "J14" H 13180 8792 50  0000 L CNN
 F 1 "LED" H 13180 8701 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 13100 8750 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 13100 8750 50  0001 C CNN
+F 4 "277-1578-ND‎" H 13100 8750 50  0001 C CNN "Digikey"
 	1    13100 8750
 	1    0    0    -1  
 $EndComp
@@ -1042,6 +1045,7 @@ F 0 "J3" H 12780 3692 50  0000 L CNN
 F 1 "Flow_Warm" H 12780 3601 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 12700 3650 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 12700 3650 50  0001 C CNN
+F 4 "277-1578-ND‎" H 12700 3650 50  0001 C CNN "Digikey"
 	1    12700 3650
 	1    0    0    -1  
 $EndComp
@@ -1059,6 +1063,7 @@ F 0 "J5" H 12780 4592 50  0000 L CNN
 F 1 "Flow_Cold" H 12780 4501 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 12700 4550 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 12700 4550 50  0001 C CNN
+F 4 "277-1578-ND‎" H 12700 4550 50  0001 C CNN "Digikey"
 	1    12700 4550
 	1    0    0    -1  
 $EndComp
@@ -1215,6 +1220,7 @@ F 0 "J2" H 13550 1117 50  0000 C CNN
 F 1 "Conn_02x12_Top_Bottom" H 13550 1026 50  0000 C CNN
 F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical" H 13500 1850 50  0001 C CNN
 F 3 "~" H 13500 1850 50  0001 C CNN
+F 4 "WM3811-ND‎" H 13500 1850 50  0001 C CNN "Digikey"
 	1    13500 1850
 	1    0    0    -1  
 $EndComp
@@ -1730,6 +1736,7 @@ F 0 "J20" V 8900 10800 50  0000 L CNN
 F 1 "Valve_M4" V 9100 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 9000 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 9000 10700 50  0001 C CNN
+F 4 "277-1578-ND‎" V 9000 10700 50  0001 C CNN "Digikey"
 	1    9000 10700
 	0    1    1    0   
 $EndComp
@@ -1741,6 +1748,7 @@ F 0 "J19" V 8500 10800 50  0000 L CNN
 F 1 "Valve_M3" V 8700 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 8600 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 8600 10700 50  0001 C CNN
+F 4 "277-1578-ND‎" V 8600 10700 50  0001 C CNN "Digikey"
 	1    8600 10700
 	0    1    1    0   
 $EndComp
@@ -1752,6 +1760,7 @@ F 0 "J18" V 8100 10800 50  0000 L CNN
 F 1 "Valve_M2" V 8300 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 8200 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 8200 10700 50  0001 C CNN
+F 4 "277-1578-ND‎" V 8200 10700 50  0001 C CNN "Digikey"
 	1    8200 10700
 	0    1    1    0   
 $EndComp
@@ -1763,6 +1772,7 @@ F 0 "J17" V 7700 10800 50  0000 L CNN
 F 1 "Valve_M1" V 7900 10550 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 7800 10700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 7800 10700 50  0001 C CNN
+F 4 "277-1578-ND‎" V 7800 10700 50  0001 C CNN "Digikey"
 	1    7800 10700
 	0    1    1    0   
 $EndComp
@@ -2244,6 +2254,7 @@ F 0 "J12" V 3950 6700 50  0000 C CNN
 F 1 "I2C_DBG" V 4050 6700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 6750 50  0001 C CNN
 F 3 "" H 3850 6750 50  0000 C CNN
+F 4 "732-5317-ND " V 3850 6750 50  0001 C CNN "Digikey"
 	1    3850 6750
 	1    0    0    -1  
 $EndComp
@@ -2980,7 +2991,7 @@ F 0 "K1" V 4833 7400 50  0000 C CNN
 F 1 "G5Q-1A" V 4924 7400 50  0000 C CNN
 F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 5750 7350 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5q.pdf" H 5400 7400 50  0001 C CNN
-F 4 "Z3632-ND" V 5400 7400 50  0001 C CNN "Digikey"
+F 4 "G5Q-14 DC5" V 5400 7400 50  0001 C CNN "Digikey"
 	1    5400 7400
 	0    1    1    0   
 $EndComp
