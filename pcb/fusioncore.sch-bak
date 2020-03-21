@@ -65,6 +65,7 @@ F 0 "J1" H 2850 1350 50  0000 C CNN
 F 1 "40HAT" H 2200 1350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2500 1450 50  0001 C CNN
 F 3 "" H 1800 1250 50  0000 C CNN
+F 4 "952-2150-ND‎" H 2500 1250 50  0001 C CNN "Digikey"
 	1    2500 1250
 	1    0    0    -1  
 $EndComp
@@ -2253,6 +2254,7 @@ F 0 "J12" V 3950 6700 50  0000 C CNN
 F 1 "I2C_DBG" V 4050 6700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3850 6750 50  0001 C CNN
 F 3 "" H 3850 6750 50  0000 C CNN
+F 4 "732-5317-ND " V 3850 6750 50  0001 C CNN "Digikey"
 	1    3850 6750
 	1    0    0    -1  
 $EndComp
@@ -2989,7 +2991,7 @@ F 0 "K1" V 4833 7400 50  0000 C CNN
 F 1 "G5Q-1A" V 4924 7400 50  0000 C CNN
 F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 5750 7350 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5q.pdf" H 5400 7400 50  0001 C CNN
-F 4 "Z3632-ND" V 5400 7400 50  0001 C CNN "Digikey"
+F 4 "G5Q-14 DC5" V 5400 7400 50  0001 C CNN "Digikey"
 	1    5400 7400
 	0    1    1    0   
 $EndComp
