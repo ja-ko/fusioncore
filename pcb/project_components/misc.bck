@@ -1,5 +1,16 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADS1230
+D 20-Bit Analog-to-Digital Converter For Bridge Sensors
+F https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-ADS1230IPWR_C58052.pdf
+$ENDCMP
+#
+$CMP AO3400A
+D 0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23
+K N-Channel Switching MOSFET
+F https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf
+$ENDCMP
+#
 $CMP HX711
 F https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf
 $ENDCMP
